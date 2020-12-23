@@ -45,7 +45,7 @@ h2{
 .L-content{
     
     color: white;
-    flex: 2.5;
+    flex: 3;
     background-color: #212226;
     height: 100%;
    
@@ -58,13 +58,13 @@ h2{
 }
 img{
    margin:0px 0px 0px 3em;
-   width: calc(100% - 3em);
+   width: calc(100% );
    height: 30em;
    
 }
 .side{
     flex: 5;
-    padding: 2em 30px 4em 3em;
+    padding: 2em 0px 6.2em 4em;
     
     
 }
@@ -117,7 +117,7 @@ img{
 .R-content{
     background-color: white;
     color: black;
-    flex: 3;
+    flex: 3.5;
     height: 100%;
     font-size: 1.1em;
     line-height: 1.5em;
@@ -201,7 +201,7 @@ section{
     margin: 10px 0px 10px;
 }
 .side > section{
-    margin: 3em 0px;
+    margin: 2.3em 0px;
     line-height:25px;
 }
 li{
@@ -213,10 +213,10 @@ li{
 li > div{
     /* margin: 50px 0px; */
     flex: .1;
+    position: relative;
+    padding: 0px 2px 2px 2px;
 }
-li > p{
-    flex: 10;
-}
+
 #progress1, #progress3{
     width: 80%;
 }
@@ -246,13 +246,15 @@ li > p{
 }
 .fa-phone,.fa-envelope,.fa-globe{
     transform: rotate(-45deg);
-    margin: -10px 5px;
+    margin: 1px 0px 2px 2px;
+    position: absolute;
+    top: 2px;
+    left: 1px;
 }
 .contact{
-    width: 20px;
-    height: 20px;
+    width: 1em;
+    height: 1.7em;
     font-size: 12px;
-    /* padding: 5px; */
     margin: 15px 10px 0px 0px;
     border: 1px solid #F6B618;
     background-color: #F6B618;
@@ -276,10 +278,13 @@ li > p{
 }
 .section-design > i{
     margin: 0px auto;
+    color: white;
+    border: 3px solid #F6B618;
+    border-radius: 50%;
 }
 .vr{
     width: 2px;
     height: 115px;
-    margin: -10px 2px;
+    margin: -10px 5px;
     background-color: #F6B618;
 }
