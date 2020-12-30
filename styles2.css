@@ -7,19 +7,25 @@
    
 }
 body{
+    /* display: flex; */
+    width: 100vw;
+    height: 100vh;
     font-size: 15px;
+    position: relative;
+    /* justify-content: flex-start; */
 }
 .container{
     width: 100vw;
-    max-width: 1300px;
-    min-width: 1200px;
     background-color:white;
+    display: flex;
     justify-content: center;
-   
 }
 main{
-    margin: 10em 7.5vw;
+    margin: -30em 0;
     width: calc(100% );
+    max-width: 1300px;
+    min-width: 1200px;
+    height: 1500px;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -111,7 +117,8 @@ img{
     background-color: white;
     color: black;
     flex: 3.5;
-    height: 100%;
+    /* max-height: 1400px;
+    min-height: 300px; */
     font-size: 1.1em;
     line-height: 1.5em;
 }
@@ -282,32 +289,32 @@ li > div{
 }
 @media all and (max-width: 767px){
     .container{
-        zoom: 30%;
+        transform: scale(0.2);
     }
 }
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
     .container{
-        zoom: 45%;
+        transform: scale(0.6);
     }
     .side{
         flex: 5;
         padding: 2em 0px 7.5em 4em;  
     }
     main{
-        margin: 5em 10vw;
-        width: calc(100% - 20vw);
+        margin:-15em 0vw;
+        width: calc(100% - 10vw);
     }
 }
 @media all and (min-width: 1200px){
     .container{
-        zoom: 300%;
+        transform: scale(1.5);
     }
     .side{
         flex: 5;
         padding: 2em 0px 6.5em 4em;  
     }
     main{
-        margin: 10em 2.5vw;
+        margin: 25vh 0;
         width: calc(100% - 5vw);
     }
 }
