@@ -21,7 +21,7 @@ body{
     justify-content: center;
 }
 main{
-    margin: -30em 0;
+    margin: -35em 0;
     width: calc(100% );
     max-width: 1300px;
     min-width: 1200px;
@@ -289,12 +289,12 @@ li > div{
 }
 @media all and (max-width: 767px){
     .container{
-        transform: scale(0.2);
+        transform: scale(0.24);
     }
 }
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
     .container{
-        transform: scale(0.6);
+        transform: scale(0.5);
     }
     .side{
         flex: 5;
