@@ -2,58 +2,231 @@
     box-sizing: border-box;
 }
 body{
-    width: 100vw;
-    height: 100vh;
+    padding: 0;
     margin: 0;
-    position: relative;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    
+    color: white;
+    font-size: 4vw;
+    box-sizing: border-box;
 }
 .container{
-    zoom: 20%;
-    transform: scaleX(1);
     width: 100vw;
-    max-width: 1300px;
-    min-width: 1200px;
-    /* background-color:red; */
-    position: absolute;
-    top: 50px;
-    left: 20vw;
+    height: 100vh;
+   
 }
 main{
-    /* margin: 5em 5em; */
-    width: calc(100% - 100vw);
-    background-color: blue;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(46,46,46);
+    position: relative;
+}
+nav{
+    padding: 1vh 20px;
+    /* width: 100vw; */
+    /* height: 5vh; */
+    background-color:rgba(46,46,46,0.3) ;
+    background-color: rgba(246, 182, 24, 0.5);
+    /* background-color: blue; */
     display: flex;
-    align-items: flex-start;
-    background-color: white;
-    box-shadow: 2px 2px 20px 1px rgba(0, 0, 0, 0.5);
+    z-index: 1001;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
 }
-img{
-    width: calc( 100%);
+.navigation-no{
+    flex: 5;
+    display: flex;
+    
 }
-.L-content{
-    flex: 1;
-    color: white;
-    background-color: #212226;
-    height: 100%;
+.title{
+    flex: .8;
 }
-.R-content{
-    flex: 1.5;
-    background-color: white;
+.circle{
+    width: 5vw;
+    height: 5vw;
+    margin: 10px 0;
+    background-color: rgb(88,88,88);
+    border: 1px solid rgb(88,88,88);
+    border-radius: 50%;
+    padding:.5em 1em;
+    font-size: 2vw;
+}
+.vr{
+    width: 8vw;
+    height: .3vh;
+    margin: 1.5vh 0;
+    background-color:rgb(88,88,88);
+}
+.personal-details-text{
+    width: 90vw;
+    margin: 15vh 5vw 0;
+    /* margin: 10vh auto; */
+    font-size: 10vw;
+}
+.sub-text{
+    font-size: 5vw;
+}
+.text{
+    display: none;
+}
+input, textarea{
+    border: 5px solid #F6B618;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+.personal-details{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    height: 100vh;
+}
+.names > label{
+    /* flex: 1; */
+    margin: 1vh 1vw;
+    font-size: 4vw;
+}
+.names input{
+    width: 43vw;
+    height: 2.5em;
+    
+}
+.contact{
+    padding: 0 5vw;
+}   
+
+.contact-details{
+    display: flex;
+    flex-flow: row wrap;
+}
+.contact span{
+    margin: 10px;
+    font-size: 7vw;
+    padding: 0 5vw;
+}
+.contact textarea{
+    /* margin: 1vh 5vw; */
+    width: calc(100%);
+    height: 5em;
+}
+.contact-details > label{
+    margin: 1vh 1vw;
+    font-size: 4vw;
+}
+.contact-details input{
+    width: 43vw;
+    height: 2.5em;
+} 
+.names{
+   display: flex;
+   flex-flow: row wrap;
+   padding: 0 5vw;
+}
+.education-info{
     color: black;
-    height: 100%;
+    padding: 0 5vw;
+    margin: 0 2vw;
+    /* box-shadow: 2px 2px 10px 1px; */
+    /* display: flex;
+   flex-flow: row wrap; */
 }
-h1{
-    margin: .5em 0;
-    font-weight: 900;
-    font-size: 2em;
+.school{
+    /* margin: 1em; */
+    display: flex;
+    flex-flow: row wrap;
 }
-h2{
-    font-weight: 400;
-    font-size: 1.2em;
-    margin: .5em 0px;
+.school > span{
+    font-size: 7vw;
+}
+.school > label{
+    margin: 1vh 1vw;
+    font-size: 5vw;
+}
+.institution{
+    width: 100%;
+}
+.school input[type= 'text']{
+    width: 100%;
+}
+input[type= 'date']{
+    width: 41vw;
+    height: 2.5em;
+}
+.education-details-text{
+    width: 90vw;
+    /* margin: 10vh 5vw 5vh; */
+    margin: 5vh auto 2vh;
+    font-size: 8vw;
 }
 
+@media all and (min-width: 1200px){
+    body{
+        font-size: 2vw;
+    }
+    main{
+        display: block;
+       background-color: #fff;
+    }
+    main > nav{
+        float: left;
+        width: 30%;
+        display: flex;
+        flex-flow: wrap;
+        height: 100vh;
+        background-color:rgba(46,46,46,1) ;
+        z-index: 0;
+        right: 40vw;
+    }
+    main > div{
+        background-color: white;
+        margin: 3em 2em;
+        width: 80%;
+        float: left;
+       padding-left: 30%;
+    }
+    .personal-details{
+        background-color: white;
+        color: black;
+    }
+    .navigation-no{
+        flex: 5;
+        display: flex;
+        flex-flow: column wrap;
+        margin: 5vh 5vw 10vh;
+    }
+    .title{
+        flex: 1;
+    }
+    .circle{
+        width: 2vw;
+        height: 2vw;
+        margin: 10px 0;
+        background-color: rgb(88,88,88);
+        border: 1px solid rgb(88,88,88);
+        border-radius: 50%;
+        padding:.1em .5em;
+        font-size: 2vw;
+    }
+    .vr{
+        z-index: -1;
+        width: .1vw;
+        height: 8vh;
+        margin: 0 1.5vw ;
+        background-color:rgb(88,88,88);
+    }
+    .personal-details-text{
+        width: 90vw;
+        margin: 0;
+        /* margin: 10vh auto; */
+        font-size: 5vw;
+    }
+    .sub-text{
+        font-size: 3vw;
+    }
+    .text{
+        display: block;
+        height: 2vh;
+        margin: -80px 10px 0 4em;
+        font-size: 1.5vw;
+    }
+}
