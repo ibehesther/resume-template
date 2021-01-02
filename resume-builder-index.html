@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Redressed">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
     <title>Resume Builder Template</title>
 </head>
 <body>
@@ -16,8 +18,8 @@
                <div class="side">
                    <div class="navigation-no">
                        <div>
-                            <span class="circle">
-                                1
+                            <span class="circle " id="c1">
+                                <span class="no">1</span>
                             </span>
                             <span class="text"> PERSONAL DETAILS </span>
                         </div>
@@ -25,8 +27,8 @@
 
                        </div>
                        <div>
-                            <span class="circle">
-                                2
+                            <span class="circle" id="c2">
+                               <span class="no">2</span>
                             </span>
                             <span class="text"> EDUCATION</span>
                         </div>
@@ -34,8 +36,8 @@
                             
                         </div>
                         <div>
-                            <span class="circle">
-                                3
+                            <span class="circle" id="c3">
+                                <span class="no">3</span>
                             </span>
                             <span class="text">SKILLS</span>
                         </div>
@@ -43,8 +45,8 @@
                             
                         </div>
                         <div>
-                            <span class="circle">
-                                4
+                            <span class="circle" id="c4">
+                               <span class="no">4</span>
                             </span>
                             <span class="text"> EXPERIENCE </span>
                         </div>
@@ -52,8 +54,8 @@
                             
                         </div>
                         <div>
-                            <span class="circle">
-                                5
+                            <span class="circle" id="c5">
+                               <span class="no">5</span>
                             </span>
                             <span class="text">ACHIEVEMENT </span>
                         </div>
@@ -61,95 +63,93 @@
                </div>
             </nav>
             <div>
-                <div class="personal-details">
-                    <div class="personal-details-text">
-                        Let's get started with your personal details
-                        <div class="sub-text">Include your full name and atleast one way for employers to reach you</div>
-                    </div>
-                    <div class="names">
-                        <label for="firstName"> First Name <br>
-                            <input type="text" name="firstName" id="firstName">
-                        </label>
-                        <label for="lastName">Last Name<br>
-                            <input type="text" name="lastName" id="lastName">
-                        </label>
-                        <label for="role">Role <br>
-                            <input type="text" name="role" id="role">
-                        </label>
-                    </div>
-                    <div class="contact">
-                        <span>Contact Details</span>
-                        <div class="contact-details">
-                            <label for="email">Email <br>
-                                <input type="email" name="email" id="email">
+                <div class="content">
+                    <div class="personal-details">
+                        <div class="personal-details-text">
+                            Let's get started
+                            <div class="sub-text">Include your full name and atleast one way for employers to reach you</div>
+                        </div>
+                        <div class="names">
+                            <label for="firstName"> First Name <span class="asterik">*</span> <br>
+                                <input type="text" name="firstName" id="firstName" placeholder="John">
                             </label>
-                            <label for="phoneNo">Phone No. <br>
-                                <input type="number" name="phoneNo" id="phoneNo">
+                            <label for="lastName">Last Name <span class="asterik">*</span><br>
+                                <input type="text" name="lastName" id="lastName" placeholder="Doe">
+                            </label>
+                            <label for="role">Role <span class="asterik">*</span> <br>
+                                <input type="text" name="role" id="role" placeholder="Designer">
+                            </label>
+                            <label for="email">Email <span class="asterik">*</span> <br>
+                                <input type="email" name="email" id="email" placeholder="johndoe@gmai...">
+                            </label>
+                            <label for="phoneNo">Phone No. <span class="asterik">*</span> <br>
+                                <input type="number" name="phoneNo" id="phoneNo" placeholder="+234-5678-90...">
                             </label>
                             <label for="website">Website <br>
-                                <input type="url" name="website" id="website">
+                                <input type="url" name="website" id="website" placeholder="www.johndoe.co">
+                            </label>
+                            
+                            <label for="info" class="more-info">Tell us about yourself <br>
+                                <textarea type="text" name="lastName" id="lastName"></textarea>
                             </label>
                         </div>
-                        <label for="info">Tell us a bit about yourself <br>
-                            <textarea type="text" name="lastName" id="lastName"></textarea>
-                        </label>
                     </div>
+                    <div class="education-info">
+                        <div class="education-details-text">
+                        Your education
+                            <div class="sub-text"></div>
+                        </div>
+                        <div class="education">
+                            <div class="school">
+                                <span>Primary Education</span>
+                                <label for="primarySchool" class="institution"> Institution <br>
+                                    <input type="text" name="primarySchool" id="prySchool">
+                                </label>
+                                <label for="pry-start"> Start date <br>
+                                    <input type="date" name="pry-start" id="pry-start">
+                                </label>
+                                <label for="pry-end">End date<br>
+                                    <input type="date" name="pry-end" id="pry-end">
+                                </label>
+                            </div>
+                            <div class="school">
+                                <span>Secondary Education</span>
+                                <label for="secondarySchool"  class="institution"> Institution <br>
+                                    <input type="text" name="secondarySchool" id="secSchool">
+                                </label>
+                                <label for="sec-start"> Start date <br>
+                                    <input type="date" name="sec-start" id="sec-start">
+                                </label>
+                                <label for="sec-end">End date<br>
+                                    <input type="date" name="sec-end" id="sec-end">
+                                </label>
+                            </div>
+                            <div class="school">
+                                <span>Tertiary Education</span>
+                                <label for="tertiarySchool"  class="institution"> Institution <br>
+                                    <input type="text" name="tertiarySchool" id="tertSchool">
+                                </label>
+                                <label for="tert-start"> Start date <br>
+                                    <input type="date" name="tert-start" id="tert-start">
+                                </label>
+                                <label for="tert-end">End date<br>
+                                    <input type="date" name="tert-end" id="tert-end">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="professional-skills">
+                        <div class="professional-sect">
+                            <select name="skills" id="skills" multiple >
+                                <option value="UI DESIGN">UI DESIGN</option>
+                                <option value="iINTERFACE DESIGN">INTERFACE DESIGN</option>
+                                <option value="USER RESEARCH">USER RESEARCH</option>
+                                <option value="DESIGN SYSTEM">DESIGN SYSTEM</option>
+                                <option value="UX DESIGN">UX DESIGN</option>
+                            </select>
+                        </div>
+                    </div> -->
                 </div>
-                <div class="education-info">
-                    <div class="education-details-text">
-                    Let us know about your educational background
-                        <div class="sub-text"></div>
-                    </div>
-                    <div class="education">
-                        <div class="school">
-                            <span>Primary Education</span>
-                            <label for="primarySchool" class="institution"> Institution <br>
-                                <input type="text" name="primarySchool" id="prySchool">
-                            </label>
-                            <label for="pry-start"> Start date <br>
-                                <input type="date" name="pry-start" id="pry-start">
-                            </label>
-                            <label for="pry-end">End date<br>
-                                <input type="date" name="pry-end" id="pry-end">
-                            </label>
-                        </div>
-                        <div class="school">
-                            <span>Secondary Education</span>
-                            <label for="secondarySchool"  class="institution"> Institution <br>
-                                <input type="text" name="secondarySchool" id="secSchool">
-                            </label>
-                            <label for="sec-start"> Start date <br>
-                                <input type="date" name="sec-start" id="sec-start">
-                            </label>
-                            <label for="sec-end">End date<br>
-                                <input type="date" name="sec-end" id="sec-end">
-                            </label>
-                        </div>
-                        <div class="school">
-                            <span>Tertiary Education</span>
-                            <label for="tertiarySchool"  class="institution"> Institution <br>
-                                <input type="text" name="tertiarySchool" id="tertSchool">
-                            </label>
-                            <label for="tert-start"> Start date <br>
-                                <input type="date" name="tert-start" id="tert-start">
-                            </label>
-                            <label for="tert-end">End date<br>
-                                <input type="date" name="tert-end" id="tert-end">
-                            </label>
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="professional-skills">
-                    <div class="professional-sect">
-                        <select name="skills" id="skills" multiple >
-                            <option value="UI DESIGN">UI DESIGN</option>
-                            <option value="iINTERFACE DESIGN">INTERFACE DESIGN</option>
-                            <option value="USER RESEARCH">USER RESEARCH</option>
-                            <option value="DESIGN SYSTEM">DESIGN SYSTEM</option>
-                            <option value="UX DESIGN">UX DESIGN</option>
-                        </select>
-                    </div>
-                </div> -->
             </div>
         </main>
     </div>
