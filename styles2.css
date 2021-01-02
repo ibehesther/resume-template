@@ -7,12 +7,11 @@
    
 }
 body{
-    /* display: flex; */
     width: 100vw;
     height: 100vh;
     font-size: 15px;
     position: relative;
-    /* justify-content: flex-start; */
+    overflow-x: hidden;
 }
 .container{
     width: 100vw;
@@ -25,7 +24,7 @@ main{
     width: calc(100% );
     max-width: 1300px;
     min-width: 1200px;
-    height: 1500px;
+    height: 100em;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -117,8 +116,6 @@ img{
     background-color: white;
     color: black;
     flex: 3.5;
-    /* max-height: 1400px;
-    min-height: 300px; */
     font-size: 1.1em;
     line-height: 1.5em;
 }
@@ -301,8 +298,12 @@ li{
     }
 }
 @media all and (min-width: 1200px){
+    body{
+        overflow-x: hidden;
+    }
     .container{
         transform: scale(1.5);
+       
     }
     .side{
         flex: 5;
@@ -311,5 +312,7 @@ li{
     main{
         margin: 25vh 0;
         width: calc(100% - 5vw);
+        height: 101em;
+        
     }
 }
