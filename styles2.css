@@ -84,34 +84,7 @@ img{
     width: 50px;
     margin-bottom: 30px;
 }
-.progress-bar{
-    width: 80%;
-    height: 5px;
-    background-color: rgba(255, 255, 255, 0.2);
-    color: #F6B618;
-    border-radius: 10px;
-    position: relative;
-}
-.progress-bar > i{
-    position: absolute;
-    top: -5px;
-    left: 0%;
-    z-index: 100;
-    font-size: 15px;
-}
-.progress-no{
-    color: white;
-    position: absolute;
-    top: -5px;
-    right: -40px;
-}
-.progress{
-    width: 0%;
-    height: 5px;
-    background-color: #F6B618;
-    color: #F6B618;
-    border-radius: 10px;
-}
+
 .R-content{
     background-color: white;
     color: black;
@@ -210,26 +183,31 @@ li{
 #progress1, #progress3{
     width: 80%;
 }
- #id1, #id3{
-    margin-left: 80%;
- }
 #progress2{
-    width: 60%;
+    background-image: linear-gradient(to right,#F6B618 60% ,  #ffffff33 40%);
  }
-#id2{
-    margin-left: 60%;
-}
 #progress4{
-    width: 90%;
-}
-#id4{
-    margin-left: 90%;
+    background-image: linear-gradient(to right,#F6B618 90% ,  #ffffff33 10%);
 }
 #progress5{
-    width: 10%;
+    background-image: linear-gradient(to right,#F6B618 50% ,  #ffffff33 50%);
 }
-#id5{
-    margin-left: 10%;
+
+input[type= 'range']{
+    -webkit-appearance: none;
+    outline: none;
+    width:80%;
+    height: 10px;
+    border-radius: 10px;
+    margin-right: 1em;
+    background-image: linear-gradient(to right,#F6B618 80% ,  #ffffff33 20%);
+}
+input[type= 'range']::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background: #F6B618;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
 }
 #text{
     font-size: 14px;
@@ -312,7 +290,7 @@ li{
     main{
         margin: 25vh 0;
         width: calc(100% - 5vw);
-        height: 101em;
+        height: 101.5em;
         
     }
 }
