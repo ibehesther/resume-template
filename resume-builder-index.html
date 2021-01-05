@@ -19,7 +19,7 @@
                    <div class="navigation-no">
                        <div>
                             <span class="circle " id="c1">
-                                <span class="no">1</span>
+                                <span class="no"><a href="">1</a></span>
                             </span>
                             <span class="text"> PERSONAL DETAILS </span>
                         </div>
@@ -28,7 +28,7 @@
                        </div>
                        <div>
                             <span class="circle" id="c2">
-                               <span class="no">2</span>
+                               <span class="no"><a href="">2</a></span>
                             </span>
                             <span class="text"> EDUCATION</span>
                         </div>
@@ -37,7 +37,7 @@
                         </div>
                         <div>
                             <span class="circle" id="c3">
-                                <span class="no">3</span>
+                                <span class="no"><a href="">3</a></span>
                             </span>
                             <span class="text">SKILLS</span>
                         </div>
@@ -46,7 +46,7 @@
                         </div>
                         <div>
                             <span class="circle" id="c4">
-                               <span class="no">4</span>
+                               <span class="no"><a href="">4</a></span>
                             </span>
                             <span class="text"> EXPERIENCE </span>
                         </div>
@@ -55,7 +55,7 @@
                         </div>
                         <div>
                             <span class="circle" id="c5">
-                               <span class="no">5</span>
+                               <span class="no"><a href="">5</a></span>
                             </span>
                             <span class="text">ACHIEVEMENT </span>
                         </div>
@@ -95,15 +95,15 @@
                         </div>
                     </div>
                     <div class="education-info">
-                        <div class="education-details-text">
-                        Your education
+                        <div class="sect-text">
+                       Education
                             <div class="sub-text"></div>
                         </div>
                         <div class="education">
                             <div class="school">
                                 <span>Primary Education</span>
                                 <label for="primarySchool" class="institution"> Institution <br>
-                                    <input type="text" name="primarySchool" id="prySchool">
+                                    <input type="text" name="primarySchool" id="prySchool"  placeholder="Green Spring International School">
                                 </label>
                                 <label for="pry-start"> Start date <br>
                                     <input type="date" name="pry-start" id="pry-start">
@@ -114,8 +114,8 @@
                             </div>
                             <div class="school">
                                 <span>Secondary Education</span>
-                                <label for="secondarySchool"  class="institution"> Institution <br>
-                                    <input type="text" name="secondarySchool" id="secSchool">
+                                <label for="secondarySchool"  class="institution" > Institution <br>
+                                    <input type="text" name="secondarySchool" id="secSchool" placeholder="Heather High School">
                                 </label>
                                 <label for="sec-start"> Start date <br>
                                     <input type="date" name="sec-start" id="sec-start">
@@ -127,7 +127,7 @@
                             <div class="school">
                                 <span>Tertiary Education</span>
                                 <label for="tertiarySchool"  class="institution"> Institution <br>
-                                    <input type="text" name="tertiarySchool" id="tertSchool">
+                                    <input type="text" name="tertiarySchool" id="tertSchool" placeholder="Schneider College">
                                 </label>
                                 <label for="tert-start"> Start date <br>
                                     <input type="date" name="tert-start" id="tert-start">
@@ -139,62 +139,105 @@
                         </div>
                     </div>
                     <div class="professional-skills">
-                        <div class="professional-skills-text">
-                            Your Professional Skills
+                        <div class="sect-text">
+                        Professional Skills
                         </div>
                         <div class="professional-sect">
-                           
-                            <!-- <select name="skills" id="skills" multiple >
-                                <option value="UI DESIGN">UI DESIGN</option>
-                                <option value="iINTERFACE DESIGN">INTERFACE DESIGN</option>
-                                <option value="USER RESEARCH">USER RESEARCH</option>
-                                <option value="DESIGN SYSTEM">DESIGN SYSTEM</option>
-                                <option value="UX DESIGN">UX DESIGN</option>
-                            </select> -->
                             <div class="skills">
                                 <label for="skill-1" >
-                                    Skill <br>
-                                    <input type="text" name="skill-1" id="skill-1">
-                                </label>
+                                    Skill :
+                                    <input type="text" name="skill-1" id="skill-1" placeholder="UI DESIGN">
+                                </label> <br>
                                 <label for="range1" class="range">
-                                   
-                                    <input type="range" name="range1" id="range1" min="0" max="100">
+                                    %  &nbsp; &nbsp; :
+                                    <input type="number" name="range1" id="range1" minlength="0" maxlength="3" placeholder="80">
                                 </label>
                             </div>
                             <div class="skills">
                                 <label for="skill-2" >
-                                    <input type="text" name="skill-2" id="skill-2">
-                                </label>
+                                    Skill :
+                                    <input type="text" name="skill-2" id="skill-2" placeholder="INTERFACE DESIGN">
+                                </label> <br>
                                 <label for="range2" class="range">
-                                    <input type="number" name="range2" id="range2" min="0" max="100">
+                                    
+                                    %  &nbsp; &nbsp; :
+                                    <input type="number" name="range2" id="range2"  minlength="0" maxlength="3" placeholder="60">
                                 </label>
                             </div>
                             <div class="skills">
                                 <label for="skill-3" >
-                                    <input type="text" name="skill-3" id="skill-3">
-                                </label>
-                                <label for="range3" class="range">
-                                    <input type="number" name="range3" id="range3" min="0" max="100">
+                                    Skill :
+                                    <input type="text" name="skill-3" id="skill-3" placeholder="USER RESEARCH">
+                                </label><br>
+                                <label for="range3" class="range"> 
+                                    % &nbsp; &nbsp; :
+                                    <input type="number" name="range3" id="range3"  minlength="0" maxlength="3" placeholder="80">
                                 </label>
                             </div>
                             <div class="skills">
                                 <label for="skill-4" >
-                                    <input type="text" name="skill-4" id="skill-4">
-                                </label>
+                                    Skill :
+                                    <input type="text" name="skill-4" id="skill-4" placeholder="DESIGN SYSTEM">
+                                </label> <br>
                                 <label for="range4" class="range">
-                                    <input type="number" name="range4" id="range4" min="0" max="100">
+                                    %  &nbsp; &nbsp; :
+                                    <input type="number" name="range4" id="range4"  minlength="0" maxlength="3" placeholder="90">
                                 </label>
                             </div>
                             <div class="skills">
                                 <label for="skill-5" >
-                                    <input type="text" name="skill-5" id="skill-5">
-                                </label>
+                                    Skill : 
+                                    <input type="text" name="skill-5" id="skill-5" placeholder="UX DESIGN">
+                                </label> <br>
                                 <label for="range5" class="range">
-                                    <input type="number" name="range5" id="range5" min="0" max="100">
+                                    %  &nbsp; &nbsp; :
+                                    <input type="number" name="range5" id="range5" minlength="0" maxlength="3" placeholder="50">
                                 </label>
                             </div>
                         </div>
                     </div>
+                    <div class="education-info">
+                        <div class="sect-text">
+                            Job Experiences
+                            <div class="sub-text"></div>
+                        </div>
+                        <div class="education">
+                            <div class="school">
+                                <label for="company1" class="institution"> Company  <br>
+                                    <input type="text" name="company1" id="comp1" placeholder="Google Inc.">
+                                </label>
+                                <label for="comp1-start"> Start date <br>
+                                    <input type="date" name="comp1-start" id="comp1-start">
+                                </label>
+                                <label for="comp1-end">End date<br>
+                                    <input type="date" name="comp1-end" id="comp1-end">
+                                </label>
+                            </div>
+                            <div class="school">
+                                <label for="company2"  class="institution"> Company <br>
+                                    <input type="text" name="company2" id="comp2" placeholder="Microsoft">
+                                </label>
+                                <label for="comp2-start"> Start date <br>
+                                    <input type="date" name="comp2-start" id="comp2-start">
+                                </label>
+                                <label for="comp2-end">End date<br>
+                                    <input type="date" name="comp2-end" id="comp2-end">
+                                </label>
+                            </div>
+                            <div class="school">
+                                <label for="company3"  class="institution"> Company <br>
+                                    <input type="text" name="company3" id="comp3" placeholder="Netlify">
+                                </label>
+                                <label for="comp3-start"> Start date <br>
+                                    <input type="date" name="comp3-start" id="comp3-start">
+                                </label>
+                                <label for="comp3-end">End date<br>
+                                    <input type="date" name="comp3-end" id="comp3-end">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="create-div"><button id="create-btn" class="create">CREATE</button></div>
                 </div>
             </div>
         </main>
