@@ -13,47 +13,48 @@
         <main>
             <nav>
                <span class="title"> 
-                   Your Resume.
+                   <!-- <img src="resume-icon.png" alt="..." > -->
+                   Resume.
                </span>
                <div class="side">
                    <div class="navigation-no">
-                       <div>
+                       <div id="nav1">
                             <span class="circle " id="c1">
-                                <span class="no"><a href="">1</a></span>
+                                <span class="no" id="no1"><a href="#personal-details">1</a></span>
                             </span>
                             <span class="text"> PERSONAL DETAILS </span>
                         </div>
                        <div class="vr">
 
-                       </div>
-                       <div>
+                       </div >
+                       <div  id="nav2">
                             <span class="circle" id="c2">
-                               <span class="no"><a href="">2</a></span>
+                               <span class="no"  id="no2"><a href="#educational-info">2</a></span>
                             </span>
                             <span class="text"> EDUCATION</span>
                         </div>
                         <div class="vr">
                             
                         </div>
-                        <div>
+                        <div  id="nav3">
                             <span class="circle" id="c3">
-                                <span class="no"><a href="">3</a></span>
+                                <span class="no"  id="no3"><a href="#professional-skills">3</a></span>
                             </span>
-                            <span class="text">SKILLS</span>
+                            <span class="text" >SKILLS</span>
                         </div>
                         <div class="vr">
                             
                         </div>
-                        <div>
+                        <div  id="nav4">
                             <span class="circle" id="c4">
-                               <span class="no"><a href="">4</a></span>
+                               <span class="no"  id="no4"><a href="#experiences">4</a></span>
                             </span>
                             <span class="text"> EXPERIENCE </span>
                         </div>
                         <div class="vr">
                             
                         </div>
-                        <div>
+                        <div  id="nav5">
                             <span class="circle" id="c5">
                                <span class="no"><a href="">5</a></span>
                             </span>
@@ -64,8 +65,8 @@
             </nav>
             <div>
                 <div class="content">
-                    <div class="personal-details">
-                        <div class="personal-details-text">
+                    <div class="personal-details" id="personal-details">
+                        <div class="personal-details-text" >
                             Let's get started
                             <div class="sub-text">Include your full name and atleast one way for employers to reach you</div>
                         </div>
@@ -94,7 +95,7 @@
                             </label>
                         </div>
                     </div>
-                    <div class="education-info">
+                    <div class="education-info" id="education-info">
                         <div class="sect-text">
                        Education
                             <div class="sub-text"></div>
@@ -138,7 +139,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="professional-skills">
+                    <div class="professional-skills" id="professional-skills">
                         <div class="sect-text">
                         Professional Skills
                         </div>
@@ -150,7 +151,7 @@
                                 </label> <br>
                                 <label for="range1" class="range">
                                     %  &nbsp; &nbsp; :
-                                    <input type="number" name="range1" id="range1" minlength="0" maxlength="3" placeholder="80">
+                                    <input type="number" name="range1" id="range1" min="0" max="100" placeholder="80">
                                 </label>
                             </div>
                             <div class="skills">
@@ -161,7 +162,7 @@
                                 <label for="range2" class="range">
                                     
                                     %  &nbsp; &nbsp; :
-                                    <input type="number" name="range2" id="range2"  minlength="0" maxlength="3" placeholder="60">
+                                    <input type="number" name="range2" id="range2"  min="0" max="100" placeholder="60">
                                 </label>
                             </div>
                             <div class="skills">
@@ -171,7 +172,7 @@
                                 </label><br>
                                 <label for="range3" class="range"> 
                                     % &nbsp; &nbsp; :
-                                    <input type="number" name="range3" id="range3"  minlength="0" maxlength="3" placeholder="80">
+                                    <input type="number" name="range3" id="range3"  min="0" max="100" placeholder="80">
                                 </label>
                             </div>
                             <div class="skills">
@@ -181,7 +182,7 @@
                                 </label> <br>
                                 <label for="range4" class="range">
                                     %  &nbsp; &nbsp; :
-                                    <input type="number" name="range4" id="range4"  minlength="0" maxlength="3" placeholder="90">
+                                    <input type="number" name="range4" id="range4"  min="0" max="100" placeholder="90">
                                 </label>
                             </div>
                             <div class="skills">
@@ -191,12 +192,12 @@
                                 </label> <br>
                                 <label for="range5" class="range">
                                     %  &nbsp; &nbsp; :
-                                    <input type="number" name="range5" id="range5" minlength="0" maxlength="3" placeholder="50">
+                                    <input type="number" name="range5" id="range5" min="0" max="100" placeholder="50">
                                 </label>
                             </div>
                         </div>
                     </div>
-                    <div class="education-info">
+                    <div class="education-info" id="experiences">
                         <div class="sect-text">
                             Job Experiences
                             <div class="sub-text"></div>
@@ -242,6 +243,6 @@
             </div>
         </main>
     </div>
-    
+    <script src='script.js'></script>
 </body>
 </html>

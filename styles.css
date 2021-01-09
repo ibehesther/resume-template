@@ -2,6 +2,7 @@
     box-sizing: border-box;
 }
 body{
+    width: 100vw;
     padding: 0;
     margin: 0;
     color: white;
@@ -12,6 +13,10 @@ body{
 }
 .container{
     width: 100vw;
+}
+img{
+    width: 40%;
+    height: 100%;
 }
 nav{
     padding: 1vh 20px;
@@ -44,27 +49,23 @@ nav{
     font-size: 2vw;
    
 }
-#c1{
-    background-color: #F6B618;
-    font-size: 2vw;
-   
+a:link, a:active{
+    color: black;
+    text-decoration: none;
 }
-#c1 > span{
-    visibility: visible;
-}
+
 .no{
     visibility: hidden;
 }
 .vr{
     width: 8vw;
     height: .3vh;
-    margin: 1.5vh 0;
+    margin: .8em 0;
     background-color:rgb(88,88,88);
 }
 .personal-details-text{
     width: 90vw;
     margin: 15vh 5vw 0;
-    /* margin: 10vh auto; */
     font-size: 10vw;
 }
 .sub-text{
@@ -110,7 +111,7 @@ input, textarea{
     margin: .3em 0;
 }
 .range > input{
-    width: 10vw;
+    width: 12vw;
 }
 .contact-details{
     display: flex;
@@ -196,13 +197,14 @@ input:focus, textarea:focus{
 }
 .create{
     width: 100%;
-    height: 5em;
+    height: 3em;
     margin: 2em auto;
     background-color: #F6B618;
     border: 1px solid #F6B618;
     border-radius: 10px;
     box-shadow: 2px 2px 3px 1px;
     font-weight: 900;
+    font-size: 5vw;
     
 }
 @media all and (min-width: 768px) and (max-width: 1199px){
@@ -247,6 +249,9 @@ input:focus, textarea:focus{
         background-color: white;
         padding: 5vh 5vw;
         
+    }.title{
+        padding: 0 5vw;
+        font-size: 3vw;
     }
     .personal-details{
         background-color: white;
@@ -347,7 +352,12 @@ input:focus, textarea:focus{
         /* margin: -2vh 0 0 0; */
     }
     .create-div{
+       
         padding: 0 4.5vw 0 1vw;
         
+    }
+    .create{
+        font-size: 3vw;
+        height: 2em;
     }
 }
