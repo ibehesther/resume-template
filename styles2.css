@@ -264,7 +264,7 @@ input[type= 'range']::-webkit-slider-thumb{
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .container2{
-        transform: scale(.65);
+        transform: scale(.6);
     }
     .side{
         flex: 5;
