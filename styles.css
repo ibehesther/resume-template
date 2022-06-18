@@ -10,7 +10,7 @@ body{
     box-sizing: border-box;
     font-family: Redressed;
     font-family: Open Sans;
-    overflow-x: hidden;
+    overflow-x : hidden;
 }
 ::selection{
     background-color: #F6B618;
@@ -172,7 +172,7 @@ input, textarea{
     /* margin: 1vh 4vw 0 0; */
     font-size: 3vw;
 }
-.institution{
+label.institution{
     width: 100%;
 }
 .school input[type= 'text']{
@@ -338,7 +338,7 @@ input:focus, textarea:focus{
     .professional-skills{
         padding: 0;
     }
-    .names > label, .school > label{
+    .names > label{
         width: 48%;
         text-transform: uppercase;
         font-size: 2vw;
